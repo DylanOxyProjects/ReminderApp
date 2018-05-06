@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+
+
+    <View android:id="@+id/fakeView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/titleTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editTitle"
+        android:layout_toStartOf="@+id/fakeView"
+        android:text="Edit Reminder Title"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/dateTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/editDate"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/fakeView"
+        android:text="Edit Date"
+        android:textSize="20sp"
+        android:layout_alignStart="@+id/titleTextview"
+        />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/titleTextview"
+        android:layout_alignBaseline="@+id/editTime"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/fakeView"
+        android:text="Edit Time"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/urgencyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/titleTextview"
+        android:layout_alignBaseline="@+id/editUrgency"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/fakeView"
+        android:text="Edit Urgency"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/topicTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/titleTextview"
+        android:layout_alignBaseline="@+id/editTopic"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/fakeView"
+        android:text="Edit Topic"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editTopic"
+        android:layout_below="@+id/editTopic"
+        android:layout_marginTop="21dp"
+        android:text="DELETE"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editDate"
+        android:layout_below="@+id/toolbar"
+        android:hint="hint"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/editDate"
+        android:layout_below="@+id/editTitle"
+        android:hint="hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fakeView"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/editTime"
+        android:layout_below="@+id/editDate"
+        android:hint="hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fakeView"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editUrgency"
+        android:layout_below="@+id/editTime"
+        android:hint="hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fakeView"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTopic"
+        android:layout_below="@+id/editUrgency"
+        android:hint="hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/fakeView"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/saveButtton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/deleteButton"
+        android:layout_alignBottom="@+id/deleteButton"
+        android:layout_alignStart="@+id/topicTextView"
+        android:text="SAVE CHANGES"
+        android:textSize="20sp" />
+
+
+
+</RelativeLayout>
+
+
+
+
+
+

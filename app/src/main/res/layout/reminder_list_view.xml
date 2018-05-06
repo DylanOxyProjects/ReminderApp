@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <ListView
+
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:id="@+id/reminderListView"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_below="@+id/deleteReminders"/>
+
+    <View android:id="@+id/fakeView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/mainMenuBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Press to go back to Main Menu"
+        android:textColor="@color/colorPrimary"
+        android:layout_alignLeft="@+id/fakeView"
+        />
+
+    <Button
+        android:id="@+id/addReminderBTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Press to add reminder"
+        android:textColor="@color/colorAccent"
+        android:layout_alignRight="@+id/fakeView"/>
+
+    <Button
+        android:id="@+id/deleteReminders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addReminderBTN"
+        android:layout_toLeftOf="@+id/fakeView"
+        android:text="Press to delete all reminders"
+        android:textColor="@color/colorAccent"/>
+
+    <Button
+        android:text="Press a reminder to edit"
+        android:id="@+id/howTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainMenuBTN"
+        android:layout_toRightOf="@+id/fakeView"
+        android:textColor="@color/colorPrimary"/>
+
+
+</RelativeLayout>

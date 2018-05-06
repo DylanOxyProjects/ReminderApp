@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ReminderApp</string>
+    <string name="welcome">Welcome!</string>
+    <string name="add_reminder">Add Reminder</string>
+    <string name="view_all_reminders">View All Reminders</string>
+    <string name="settings">Settings</string>
+    <string name="about">About</string>
+    <string name="setANewReminder">Set a New Reminder!</string>
+</resources>

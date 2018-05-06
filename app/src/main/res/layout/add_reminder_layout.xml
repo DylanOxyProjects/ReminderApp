@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View android:id="@+id/fakeView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/setANewReminder"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/addTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/addButton"
+        android:layout_below="@+id/textView"
+        android:layout_marginEnd="262dp"
+        android:layout_marginTop="87dp"
+        android:text="Set Reminder Title"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/addDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/addTitle"
+        android:layout_below="@+id/addTitle"
+        android:layout_marginTop="40dp"
+        android:text="Set Date + Time of Reminder"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/addUrgency"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/addDate"
+        android:layout_below="@+id/addDate"
+        android:layout_marginTop="57dp"
+        android:text="Set Reminder Urgency"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/addTopic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/addUrgency"
+        android:layout_below="@+id/addUrgency"
+        android:layout_marginTop="60dp"
+        android:text="Select Reminder Topic"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:text="Create New Reminder!"
+        android:textSize="25sp"
+        android:textColor="@color/colorPrimary"/>
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/addTitle"
+        android:text="Your Reminder Title Will Appear Here!"
+        android:layout_toRightOf="@+id/fakeView"/>
+
+    <TextView
+        android:id="@+id/calenderView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/titleView"
+        android:layout_alignTop="@+id/addDate"
+        android:text="Your Reminder Date/Time Will Appear Here!"
+        android:layout_toRightOf="@+id/fakeView"/>
+
+    <TextView
+        android:id="@+id/urgencyView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/calenderView"
+        android:layout_alignTop="@+id/addUrgency"
+        android:text="Your Reminder Urgency Will Appear Here!"
+        android:layout_toRightOf="@+id/fakeView"/>
+
+    <TextView
+        android:id="@+id/topicView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/urgencyView"
+        android:layout_alignTop="@+id/addTopic"
+        android:text="Your Reminder Topic Will Appear Here!"
+        android:layout_toRightOf="@+id/fakeView"/>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/addButton"
+        android:layout_alignBottom="@+id/addButton"
+        android:layout_alignEnd="@+id/urgencyView"
+        android:text="Back" />
+
+
+</RelativeLayout>
