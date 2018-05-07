@@ -65,7 +65,7 @@ public class ReminderAdapter extends BaseAdapter{
             holder.reminderListTitle = view.findViewById(R.id.reminderListTitle);
             holder.reminderListDate = view.findViewById(R.id.dateView);
             holder.reminderListTime = view.findViewById(R.id.timeView);
-            holder.reminderlistDateTime = view.findViewById(R.id.reminderListDateTime);
+            //holder.reminderlistDateTime = view.findViewById(R.id.reminderListDateTime);
             holder.reminderListUrgency = view.findViewById(R.id.reminderListUrgency);
             holder.reminderListTopic = view.findViewById(R.id.reminderListTopic);
             holder.reminderListPicture = view.findViewById(R.id.reminderListPicture);
@@ -83,7 +83,7 @@ public class ReminderAdapter extends BaseAdapter{
         TextView reminderListTitle = holder.reminderListTitle;
         TextView reminderListDate = holder.reminderListDate;
         TextView reminderListTime = holder.reminderListTime;
-        TextView reminderlistDateTime = holder.reminderlistDateTime;
+        //TextView reminderlistDateTime = holder.reminderlistDateTime;
         TextView reminderListUrgency = holder.reminderListUrgency;
         TextView reminderListTopic = holder.reminderListTopic;
 
@@ -92,12 +92,12 @@ public class ReminderAdapter extends BaseAdapter{
 
 
         // update the row view's textviews and imageview to display the information
-        reminderListTitle.setText(currentReminder.reminderTitle);
-        reminderListDate.setText(currentReminder.date);
-        reminderListTime.setText(currentReminder.time);
-        reminderlistDateTime.setText(currentReminder.reminderDateTime);
-        reminderListUrgency.setText(currentReminder.reminderUrgency);
-        reminderListTopic.setText(currentReminder.reminderTopic);
+        reminderListTitle.setText("Title: " + currentReminder.reminderTitle);
+        reminderListDate.setText("Date: " + currentReminder.date);
+        reminderListTime.setText("Time: " + currentReminder.time);
+        //reminderlistDateTime.setText(currentReminder.reminderDateTime);
+        reminderListUrgency.setText("Urgency: " + currentReminder.reminderUrgency);
+        reminderListTopic.setText("Topic: " + currentReminder.reminderTopic);
         Picasso.get().load("https://cdn1.iconfinder.com/data/icons/office-22/48/alarm-clock-512.png").into(reminderListPicture);
 
 
@@ -110,7 +110,7 @@ public class ReminderAdapter extends BaseAdapter{
         TextView reminderListTitle;
         TextView reminderListDate;
         TextView reminderListTime;
-        TextView reminderlistDateTime;
+        //TextView reminderlistDateTime;
         TextView reminderListUrgency;
         TextView reminderListTopic;
 
